@@ -5,7 +5,7 @@
     <artifactId>web-parallel</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>web-parallel Maven Webapp</name>
+    <name>web-parallel</name>
     <url>http://maven.apache.org</url>
 
     <dependencies>

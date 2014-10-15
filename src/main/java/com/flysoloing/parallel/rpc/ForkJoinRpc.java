@@ -132,11 +132,10 @@ public class ForkJoinRpc {
         requestVo.setCardNo("621909");
 
         HttpClient httpClient = new DefaultHttpClient();
-        HttpPost httpPost = new HttpPost("http://center.pay.jd.com/service/center/verifyCardBin");
+        HttpPost httpPost = new HttpPost("http://www.baidu.com");
         httpPost.setHeader("Content-Type", "application/json");
-        httpPost.setHeader("token", "1qaz2wsx3edc");
 
-        List<NameValuePair> formParams = new ArrayList<NameValuePair>();
+        List<NameValuePair> formParams = new ArrayList<>();
         formParams.add(new BasicNameValuePair("data", GsonUtils.toJson(requestVo)));
         UrlEncodedFormEntity urlEncodedFormEntity;
         System.out.println("thread id: " + Thread.currentThread().getId() + ", request data:" + GsonUtils.toJson(requestVo));
