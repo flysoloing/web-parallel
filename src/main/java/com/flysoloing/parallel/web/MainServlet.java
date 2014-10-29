@@ -58,7 +58,6 @@ public class MainServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ForkJoinPool forkJoinPool = new ForkJoinPool();
         String type = req.getParameter("type");
         Result result = new Result();
 
@@ -129,6 +128,7 @@ public class MainServlet extends HttpServlet {
             System.out.println("case 3 is running ...");
             long start = System.currentTimeMillis();
 
+            ForkJoinPool forkJoinPool = new ForkJoinPool();
             ForkJoinRpc forkJoinRpc = new ForkJoinRpc();
 
             ForkJoinTask forkJoinTask = new ForkJoinTask(taskList, forkJoinRpc, bean);

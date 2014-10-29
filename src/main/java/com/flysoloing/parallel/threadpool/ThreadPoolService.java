@@ -2,9 +2,6 @@ package com.flysoloing.parallel.threadpool;
 
 import com.flysoloing.parallel.common.BusinessBean;
 import com.flysoloing.parallel.common.Result;
-import com.flysoloing.parallel.threadpool.ThreadPoolTask;
-import com.flysoloing.parallel.threadpool.ThreadPoolRpc;
-import com.jd.payment.paycommon.utils.GsonUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,7 +47,7 @@ public class ThreadPoolService {
             for (Future<Result> future : futureList) {
                 Result temp = new Result();
                 temp = future.get();
-                result.put(String.valueOf(future.hashCode()), GsonUtils.toJson(future));
+                result.put(String.valueOf(future.hashCode()), future.toString());
             }
 
         } catch (InterruptedException e) {

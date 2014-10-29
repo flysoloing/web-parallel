@@ -2,7 +2,6 @@ package com.flysoloing.parallel.forkjoin;
 
 import com.flysoloing.parallel.common.BusinessBean;
 import com.flysoloing.parallel.common.Result;
-import com.jd.payment.paycommon.utils.GsonUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,7 +55,7 @@ public class ForkJoinTask extends RecursiveTask<Result> {
 //        }
         if (taskList == null || taskList.size() < 1 || taskList.isEmpty()) {
             Result temp = forkJoinRpc.cardBinVerify(bean);
-            result.put(temp.toString(), GsonUtils.toJson(temp));
+            result.put(temp.toString(), String.valueOf(temp.size()));
         } else {
             for (String taskName : taskList) {
                 new ForkJoinTask(forkJoinRpc, bean).fork();
