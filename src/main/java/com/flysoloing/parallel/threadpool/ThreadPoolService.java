@@ -1,9 +1,9 @@
-package com.flysoloing.parallel.service;
+package com.flysoloing.parallel.threadpool;
 
-import com.flysoloing.parallel.domain.BusinessBean;
-import com.flysoloing.parallel.domain.Result;
-import com.flysoloing.parallel.domain.ThreadPoolTask;
-import com.flysoloing.parallel.rpc.ThreadPoolRpc;
+import com.flysoloing.parallel.common.BusinessBean;
+import com.flysoloing.parallel.common.Result;
+import com.flysoloing.parallel.threadpool.ThreadPoolTask;
+import com.flysoloing.parallel.threadpool.ThreadPoolRpc;
 import com.jd.payment.paycommon.utils.GsonUtils;
 
 import java.util.ArrayList;

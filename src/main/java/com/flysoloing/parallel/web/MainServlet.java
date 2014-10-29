@@ -1,10 +1,10 @@
 package com.flysoloing.parallel.web;
 
-import com.flysoloing.parallel.domain.BusinessBean;
-import com.flysoloing.parallel.domain.ForkJoinTask;
-import com.flysoloing.parallel.domain.Result;
-import com.flysoloing.parallel.rpc.ForkJoinRpc;
-import com.flysoloing.parallel.service.ThreadPoolService;
+import com.flysoloing.parallel.common.BusinessBean;
+import com.flysoloing.parallel.forkjoin.ForkJoinTask;
+import com.flysoloing.parallel.common.Result;
+import com.flysoloing.parallel.forkjoin.ForkJoinRpc;
+import com.flysoloing.parallel.threadpool.ThreadPoolService;
 
 import javax.servlet.AsyncContext;
 import javax.servlet.ServletException;
@@ -16,7 +16,6 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.TimeUnit;
 

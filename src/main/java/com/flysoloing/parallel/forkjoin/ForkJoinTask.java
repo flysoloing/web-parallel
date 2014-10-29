@@ -1,6 +1,7 @@
-package com.flysoloing.parallel.domain;
+package com.flysoloing.parallel.forkjoin;
 
-import com.flysoloing.parallel.rpc.ForkJoinRpc;
+import com.flysoloing.parallel.common.BusinessBean;
+import com.flysoloing.parallel.common.Result;
 import com.jd.payment.paycommon.utils.GsonUtils;
 
 import java.util.ArrayList;

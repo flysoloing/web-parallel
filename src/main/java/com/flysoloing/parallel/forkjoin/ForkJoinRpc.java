@@ -1,7 +1,7 @@
-package com.flysoloing.parallel.rpc;
+package com.flysoloing.parallel.forkjoin;
 
-import com.flysoloing.parallel.domain.BusinessBean;
-import com.flysoloing.parallel.domain.Result;
+import com.flysoloing.parallel.common.BusinessBean;
+import com.flysoloing.parallel.common.Result;
 import com.jd.payment.center.export.vo.CardBinRequestVo;
 import com.jd.payment.paycommon.utils.GsonUtils;
 import org.apache.http.HttpEntity;

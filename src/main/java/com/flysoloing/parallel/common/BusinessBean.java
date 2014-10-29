@@ -1,4 +1,4 @@
-package com.flysoloing.parallel.domain;
+package com.flysoloing.parallel.common;
 
 import java.util.HashMap;
 

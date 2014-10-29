@@ -1,6 +1,7 @@
-package com.flysoloing.parallel.domain;
+package com.flysoloing.parallel.threadpool;
 
-import com.flysoloing.parallel.rpc.ThreadPoolRpc;
+import com.flysoloing.parallel.common.BusinessBean;
+import com.flysoloing.parallel.common.Result;
 
 import java.util.concurrent.Callable;
 
